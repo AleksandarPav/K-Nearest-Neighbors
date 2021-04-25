@@ -42,7 +42,7 @@ def main():
     # KNN model instance with n_neighbors = 1
     knn = KNeighborsClassifier(n_neighbors = 1)
 
-    # Fit this KNN model to the training data.
+    # fitting KNN model to the training data
     knn.fit(X_train, y_train)
 
     # predicting the values using KNN model and X_test
