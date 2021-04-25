@@ -1,2 +1,5 @@
 # K Nearest Neighbors
  
+Data set contains coded features: XVPM, GWYH, TRAT, TLLZ, IGGA, HYKR, EDFS, GUUB, MGJM, JHZC, TARGET CLASS and simulates a task given by some company that wants to hide their bussiness information, but is interested in classifying data into one of two possible categories.
+
+After examining cross-correlation between features, data is scaled, because of the nature of KNN algorithm. It is then splitted into training and testing set, with 7:3 ratio. Initial KNN model has value 1 for the number of neighbors. After training of the data and prediction of the values from the testing set, classification report and confusion matrix are used for evaluating the model. Then, 40 values are tried out for the number of neighbors (1 to 40) and with every value, new model was created and data was fitted and predicted. For every value, average error is calculated and at the end the K-value with the lowest error was chosen. Data is again trained with only the best value, predictions are done on the testing set and classification report and confusion matrix are created for model evaluation.
